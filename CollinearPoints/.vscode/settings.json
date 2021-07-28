@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Jauwaad Shams\\Documents\\princetonAlgo\\algs4.jar"
+    ],
+    "files.associations": {
+        "ostream": "cpp"
+    }
+}

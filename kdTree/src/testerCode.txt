@@ -1,0 +1,39 @@
+KdTree obj = new KdTree();
+Scanner input = new Scanner(System.in);
+Random rand = new Random();
+System.out.println("Enter number of Points : ");
+int s = input.nextInt();
+double x,y;
+for(int i=0;i<s;i++){
+        x=rand.nextDouble();
+    y=rand.nextDouble();
+    obj.insert(new Point2D(x,y));
+}
+System.out.println("The number of points is : " + obj.size());
+obj.draw();
+input.close();
+
+
+KdTree obj = new KdTree();
+        // Scanner input = new Scanner(System.in);
+        // Random rand = new Random();
+
+        File file = new File("input.txt");
+        Scanner input = new Scanner(file);
+
+        // System.out.println("Enter number of Points : ");
+        int s = input.nextInt();
+        double x, y;
+        for (int i = 0; i < s; i++) {
+            x = input.nextDouble();
+            y = input.nextDouble();
+            obj.insert(new Point2D(x, y));
+        }
+
+        for (Point2D p : obj.pointsIterable(obj.getRoot())) {
+            System.out.println(p.toString());
+        }
+
+        System.out.println("The number of points is : " + obj.size());
+        System.out.println(obj.contains(new Point2D(0.9, 0.6)));
+        input.close();

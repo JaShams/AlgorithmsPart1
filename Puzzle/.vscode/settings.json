@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Jauwaad Shams\\Documents\\Programming\\princetonAlgo\\algs4.jar"
+    ],
+    "java.project.sourcePaths": [
+        "src"
+    ]
+}
